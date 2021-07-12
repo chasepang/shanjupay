@@ -1,0 +1,12 @@
+# Project exclude paths
+/shanjupay-common/target/
+/shanjupay-gateway/shanjupay-gateway-service/target/
+/shanjupay-merchant/shanjupay-merchant-api/target/
+/shanjupay-merchant/shanjupay-merchant-service/target/
+/shanjupay-merchant-application/target/
+/shanjupay-transaction/shanjupay-transaction-api/target/
+/shanjupay-transaction/shanjupay-transaction-service/target/
+/shanjupay-uaa/shanjupay-uaa-api/target/
+/shanjupay-uaa/shanjupay-uaa-service/target/
+/shanjupay-user/shanjupay-user-api/target/
+/shanjupay-user/shanjupay-user-service/target/

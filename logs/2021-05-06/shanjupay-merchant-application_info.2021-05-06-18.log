@@ -1,0 +1,873 @@
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:18,562 INFO [main][:] - using logger: org.apache.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:18,586 INFO [main][WelcomeLogoApplicationListener.java:63] - 
+
+ :: Dubbo Spring Boot (v2.7.1) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.7.3) : https://github.com/apache/incubator-dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:18,593 INFO [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=merchant-application, dubbo.application.qos-enable=false, dubbo.application.qos.port=22310, dubbo.config.multiple=true, dubbo.consumer.check=false, dubbo.consumer.retries=-1, dubbo.consumer.timeout=3000, dubbo.protocol.name=dubbo, dubbo.protocol.port=20891, dubbo.registry.address=nacos://127.0.0.1:8848, dubbo.scan.base-packages=com.shanjupay}
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:19,449 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:19,543 INFO [pool-6-thread-1][AwaitingNonWebApplicationListener.java:140] -  [Dubbo] Current Spring Boot Application is await...
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:21,150 INFO [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=merchant-application, dubbo.application.qos-enable=false, dubbo.application.qos.port=22310, dubbo.config.multiple=true, dubbo.consumer.check=false, dubbo.consumer.retries=-1, dubbo.consumer.timeout=3000, dubbo.protocol.name=dubbo, dubbo.protocol.port=20891, dubbo.registry.address=nacos://127.0.0.1:8848, dubbo.scan.base-packages=com.shanjupay}
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:21,320 INFO [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'spring-boot-http.yaml', group: 'COMMON_GROUP'
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:21,327 INFO [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'merchant-application.yaml', group: 'SHANJUPAY_GROUP'
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:21,329 INFO [main][PropertySourceBootstrapConfiguration.java:98] - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='merchant-application.yaml'}, NacosPropertySource {name='spring-boot-http.yaml'}]}
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:21,348 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,258 WARN [main][EndpointId.java:135] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,261 WARN [main][EndpointId.java:135] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,277 INFO [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, class : org.apache.dubbo.config.ApplicationConfig] has been registered.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,278 INFO [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ApplicationConfig#0] has been registered.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,278 INFO [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.RegistryConfig#0, class : org.apache.dubbo.config.RegistryConfig] has been registered.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,278 INFO [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.RegistryConfig#0] has been registered.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,279 INFO [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, class : org.apache.dubbo.config.ProtocolConfig] has been registered.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,279 INFO [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ProtocolConfig#0] has been registered.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,279 INFO [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ConsumerConfig#0, class : org.apache.dubbo.config.ConsumerConfig] has been registered.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,279 INFO [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ConsumerConfig#0] has been registered.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,661 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,749 INFO [main][ServiceAnnotationBeanPostProcessor.java:204] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,749 INFO [main][ServiceAnnotationBeanPostProcessor.java:206] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,771 INFO [main][ServiceAnnotationBeanPostProcessor.java:284] -  [DUBBO] The BeanDefinition[Root bean: class [org.apache.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] of ServiceBean has been registered with name : ServiceBean:com.shanjupay.merchant.service.SmsService, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,771 INFO [main][ServiceAnnotationBeanPostProcessor.java:161] -  [DUBBO] 1 annotated Dubbo's @Service Components { [Bean definition with name 'smsServiceImpl': Generic bean: class [com.shanjupay.merchant.service.SmsServiceImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\workplace\idea\learn\shanjupay\shanjupay-merchant-application\target\classes\com\shanjupay\merchant\service\SmsServiceImpl.class]] } were scanned under package[com.shanjupay], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,773 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,774 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:22,956 INFO [main][GenericScope.java:294] - BeanFactory id=af541b88-8fe6-3349-8990-f8dd95ccbebb
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:23,233 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:23,255 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubbo.cloud-com.alibaba.cloud.dubbo.env.DubboCloudProperties' of type [com.alibaba.cloud.dubbo.env.DubboCloudProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:23,270 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'metadataJsonResolver' of type [com.alibaba.cloud.dubbo.metadata.resolver.DubboServiceBeanMetadataResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:23,283 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.apache.dubbo.config.ApplicationConfig#0' of type [org.apache.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:23,289 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboProtocolConfigSupplier' of type [com.alibaba.cloud.dubbo.metadata.DubboProtocolConfigSupplier] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:23,290 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:23,291 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:23,296 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:23,305 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboGenericServiceFactory' of type [com.alibaba.cloud.dubbo.service.DubboGenericServiceFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:23,309 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboMetadataConfigServiceProxy' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:23,315 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:23,321 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:23,334 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.commons.util.UtilAutoConfiguration' of type [org.springframework.cloud.commons.util.UtilAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:23,343 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtilsProperties' of type [org.springframework.cloud.commons.util.InetUtilsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:23,345 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtils' of type [org.springframework.cloud.commons.util.InetUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:24,956 INFO [main][InetUtils.java:170] - Cannot determine local hostname
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:24,957 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosProperties' of type [com.alibaba.cloud.nacos.NacosDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:24,963 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosDiscoveryClient' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:24,985 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties' of type [org.springframework.boot.autoconfigure.web.ServerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:24,988 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,577 INFO [main][InetUtils.java:170] - Cannot determine local hostname
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,580 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryProperties' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,583 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryClient' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,588 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'compositeDiscoveryClient' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,591 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.util.JSONUtils' of type [com.alibaba.cloud.dubbo.util.JSONUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,820 WARN [main][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,821 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository' of type [com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,834 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestParamServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestParamServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,852 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties' of type [org.springframework.boot.autoconfigure.http.HttpProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,856 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,869 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'stringHttpMessageConverter' of type [org.springframework.http.converter.StringHttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,873 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,878 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,884 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,889 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,895 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,899 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,908 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,925 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,930 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,943 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,948 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,986 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,994 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'mappingJackson2HttpMessageConverter' of type [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:26,999 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration' of type [org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:27,009 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'messageConverters' of type [org.springframework.boot.autoconfigure.http.HttpMessageConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:27,013 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestBodyServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestBodyServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:27,019 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestHeaderServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestHeaderServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:27,025 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.PathVariableServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.PathVariableServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:27,025 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.DubboGenericServiceExecutionContextFactory' of type [com.alibaba.cloud.dubbo.service.DubboGenericServiceExecutionContextFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:27,040 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:27,045 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:27,048 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:27,050 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:27,058 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:27,579 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 57010 (http)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:27,616 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-57010"]
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:27,623 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:27,624 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:27,636 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\usr\local\jdk\jdk1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\usr\local\jdk\jdk1.8.0_152\bin;D:\usr\local\mysql\mysql-5.7.29-winx64\bin;D:\usr\local\maven\apache-maven-3.6.3\bin;D:\Program Files\Git\cmd;D:\usr\local\nodejs\;D:\usr\local\Redis\;D:\PostgreSQL\11\bin;D:\usr\local\wkhtmltox-0.12.5-1.mxe-cross-win64\wkhtmltox\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\usr\local\hadoop2.7.5\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\chase\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\chase\AppData\Local\Programs\Python\Python37\;C:\Users\chase\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;C:\Users\chase\AppData\Roaming\npm;C:\Users\chase\.dotnet\tools;D:\heroku\bin;.]
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:27,823 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:27,823 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 6465 ms
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,225 INFO [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.ConsumerConfig#0] have been binding by prefix of configuration properties : dubbo.consumer
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,248 INFO [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.RegistryConfig#0] have been binding by prefix of configuration properties : dubbo.registry
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,254 INFO [main][AnnotatedInterfaceConfigBeanBuilder.java:84] - The configBean[type:ReferenceBean] has been built.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,273 WARN [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,305 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,306 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,327 INFO [main][QosProtocolWrapper.java:89] -  [DUBBO] qos won't be started because it is disabled. Please check dubbo.application.qos.enable is configured either in system property, dubbo.properties or XML/spring-boot configuration., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,328 WARN [main][SpringExtensionFactory.java:86] -  [DUBBO] No spring extension (bean) named:applicationContext, try to find an extension (bean) of type org.springframework.context.ConfigurableApplicationContext, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,329 WARN [main][SpringExtensionFactory.java:104] -  [DUBBO] No spring extension (bean) named:applicationContext, type:org.springframework.context.ConfigurableApplicationContext found, stop get bean., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,362 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://192.168.31.2/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryMerchantById,createMerchant&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269273, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,373 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://192.168.31.2/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryMerchantById,createMerchant&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269273, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,375 INFO [main][AbstractSpringCloudRegistry.java:213] - The Dubbo Service URL[ID : consumer://192.168.31.2/com.shanjupay.merchant.api.MerchantService] is being subscribed for service[name : merchant-service]
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,376 INFO [main][AbstractSpringCloudRegistry.java:223] - The metadata of Dubbo service[key : com.shanjupay.merchant.api.MerchantService] can't be found when the subscribed service[name : merchant-service], and then try to initialize it
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,376 INFO [main][DubboServiceMetadataRepository.java:280] - The metadata of Dubbo service[name : merchant-service] is about to be initialized
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,507 WARN [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,510 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,511 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,512 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://192.168.31.2/org.apache.dubbo.rpc.service.GenericService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&generic=true&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269508&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:29,512 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://192.168.31.2/org.apache.dubbo.rpc.service.GenericService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&generic=true&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269508&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:30,493 INFO [main][AbstractClient.java:199] -  [DUBBO] Succeed connect to server /192.168.31.2:20890 from NettyClient 192.168.31.2 using dubbo version 2.7.3, channel is NettyChannel [channel=[id: 0x80d509e9, L:/192.168.31.2:63923 - R:/192.168.31.2:20890]], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:30,493 INFO [main][AbstractClient.java:71] -  [DUBBO] Start NettyClient LAPTOP-KIVF0AF2/192.168.31.2 connect to the server /192.168.31.2:20890, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:30,562 INFO [main][AbstractRegistry.java:212] -  [DUBBO] Load registry cache file C:\Users\chase\.dubbo\dubbo-registry-merchant-application-127.0.0.1:8848.cache, data: {com.shanjupay.merchant.api.MerchantService=dubbo://192.168.31.2:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&path=com.shanjupay.merchant.api.MerchantService&pid=24324&protocol=dubbo&register=true&release=2.7.3&side=provider&timestamp=1620296704745, merchant-service/com.alibaba.cloud.dubbo.service.DubboMetadataService:1.0.0=dubbo://192.168.31.2:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&path=com.alibaba.cloud.dubbo.service.DubboMetadataService&pid=18552&protocol=dubbo&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620290586149&version=1.0.0}, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:30,562 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://192.168.31.2/org.apache.dubbo.rpc.service.GenericService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&generic=true&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269508&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:30,571 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://192.168.31.2/org.apache.dubbo.rpc.service.GenericService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&generic=true&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269508&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:30,578 INFO [main][AbstractRegistry.java:399] -  [DUBBO] Notify urls for subscribe url consumer://192.168.31.2/org.apache.dubbo.rpc.service.GenericService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&generic=true&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269508&version=1.0.0, urls: [dubbo://192.168.31.2:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&path=com.alibaba.cloud.dubbo.service.DubboMetadataService&pid=24612&protocol=dubbo&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620297246874&version=1.0.0], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:30,582 INFO [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:399] -  [DUBBO] Notify urls for subscribe url consumer://192.168.31.2/org.apache.dubbo.rpc.service.GenericService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&generic=true&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269508&version=1.0.0, urls: [dubbo://192.168.31.2:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&path=com.alibaba.cloud.dubbo.service.DubboMetadataService&pid=24612&protocol=dubbo&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620297246874&version=1.0.0], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:30,584 INFO [main][ReferenceConfig.java:421] -  [DUBBO] Refer dubbo service org.apache.dubbo.rpc.service.GenericService from url registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-application&check=false&cluster=registryaware&dubbo=2.0.2&generic=true&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=2564&qos.enable=false&qos.port=22310&refer=application%3Dmerchant-application%26check%3Dfalse%26dubbo%3D2.0.2%26generic%3Dtrue%26group%3Dmerchant-service%26interface%3Dcom.alibaba.cloud.dubbo.service.DubboMetadataService%26lazy%3Dfalse%26pid%3D2564%26qos.enable%3Dfalse%26qos.port%3D22310%26register.ip%3D192.168.31.2%26release%3D2.7.3%26retries%3D-1%26side%3Dconsumer%26sticky%3Dfalse%26timeout%3D3000%26timestamp%3D1620297269508%26version%3D1.0.0&register.ip=192.168.31.2&registry=nacos&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269508&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:30,790 WARN [main][DubboServiceMetadataRepository.java:484] - The Spring application[name : merchant-service] does not expose The REST metadata in the Dubbo services.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:30,797 INFO [main][AbstractClient.java:199] -  [DUBBO] Succeed connect to server /192.168.31.31:20890 from NettyClient 192.168.31.2 using dubbo version 2.7.3, channel is NettyChannel [channel=[id: 0xc6f4d631, L:/192.168.31.31:63927 - R:/192.168.31.31:20890]], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:30,797 INFO [main][AbstractClient.java:71] -  [DUBBO] Start NettyClient LAPTOP-KIVF0AF2/192.168.31.2 connect to the server /192.168.31.31:20890, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:30,799 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://192.168.31.2/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryMerchantById,createMerchant&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269273, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:30,801 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://192.168.31.2/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryMerchantById,createMerchant&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269273, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:30,803 INFO [main][AbstractRegistry.java:399] -  [DUBBO] Notify urls for subscribe url consumer://192.168.31.2/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryMerchantById,createMerchant&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269273, urls: [dubbo://192.168.31.2:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&path=com.shanjupay.merchant.api.MerchantService&pid=24612&protocol=dubbo&register=true&release=2.7.3&side=provider&timestamp=1620297244264], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:30,804 INFO [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:399] -  [DUBBO] Notify urls for subscribe url consumer://192.168.31.2/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryMerchantById,createMerchant&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269273, urls: [dubbo://192.168.31.2:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&path=com.shanjupay.merchant.api.MerchantService&pid=24612&protocol=dubbo&register=true&release=2.7.3&side=provider&timestamp=1620297244264], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:30,804 INFO [main][ReferenceConfig.java:421] -  [DUBBO] Refer dubbo service com.shanjupay.merchant.api.MerchantService from url registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-application&check=false&cluster=registryaware&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryMerchantById,createMerchant&pid=2564&qos.enable=false&qos.port=22310&refer=application%3Dmerchant-application%26check%3Dfalse%26dubbo%3D2.0.2%26interface%3Dcom.shanjupay.merchant.api.MerchantService%26lazy%3Dfalse%26methods%3DqueryMerchantById%2CcreateMerchant%26pid%3D2564%26qos.enable%3Dfalse%26qos.port%3D22310%26register.ip%3D192.168.31.2%26release%3D2.7.3%26retries%3D-1%26side%3Dconsumer%26sticky%3Dfalse%26timeout%3D3000%26timestamp%3D1620297269273&register.ip=192.168.31.2&registry=nacos&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269273, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:30,828 INFO [main][AnnotatedInterfaceConfigBeanBuilder.java:84] - The configBean[type:ReferenceBean] has been built.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:31,322 INFO [main][EndpointLinksResolver.java:59] - Exposing 4 endpoint(s) beneath base path '/actuator'
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:31,538 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:31,642 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:31,643 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:31,650 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:31,650 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:31,798 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:32,121 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:32,138 INFO [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.ProtocolConfig#0] have been binding by prefix of configuration properties : dubbo.protocol
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:32,579 INFO [main][DubboServiceMetadataRepository.java:262] - The metadata of Dubbo services has been initialized
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:32,653 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:32,656 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:32,657 INFO [com.alibaba.nacos.naming.client.listener][DubboServiceDiscoveryAutoConfiguration.java:157] - The event of the service instances[name : merchant-service , size : 1] change is about to be dispatched
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:32,658 INFO [com.alibaba.nacos.naming.client.listener][AbstractSpringCloudRegistry.java:213] - The Dubbo Service URL[ID : consumer://192.168.31.2/com.shanjupay.merchant.api.MerchantService] is being subscribed for service[name : merchant-service]
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:32,673 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:32,726 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:32,953 INFO [main][ServiceBean.java:112] -  [DUBBO] The service ready on spring started. service: com.shanjupay.merchant.service.SmsService, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:32,962 WARN [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:32,985 INFO [main][ServiceConfig.java:643] -  [DUBBO] Export dubbo service com.shanjupay.merchant.service.SmsService to local registry url : injvm://127.0.0.1/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&bind.ip=192.168.31.2&bind.port=20891&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:32,986 INFO [main][ServiceConfig.java:581] -  [DUBBO] Export dubbo service com.shanjupay.merchant.service.SmsService to url dubbo://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&bind.ip=192.168.31.2&bind.port=20891&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:32,986 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:32,986 INFO [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service com.shanjupay.merchant.service.SmsService url dubbo://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&bind.ip=192.168.31.2&bind.port=20891&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&side=provider&timestamp=1620297272964 to registry registry://localhost:9090/org.apache.dubbo.registry.RegistryService?application=merchant-application&dubbo=2.0.2&pid=2564&qos.enable=false&qos.port=22310&registry=spring-cloud&release=2.7.3&timestamp=1620297272962, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:33,015 INFO [main][AbstractServer.java:73] -  [DUBBO] Start NettyServer bind /0.0.0.0:20891, export /192.168.31.2:20891, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:33,021 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,625 INFO [main][InetUtils.java:170] - Cannot determine local hostname
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,625 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&bind.ip=192.168.31.2&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,625 INFO [main][AbstractSpringCloudRegistry.java:213] - The Dubbo Service URL[ID : provider://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService] is being subscribed for service[name : merchant-service]
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,629 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,629 INFO [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service com.shanjupay.merchant.service.SmsService url dubbo://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&bind.ip=192.168.31.2&bind.port=20891&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&side=provider&timestamp=1620297272964 to registry registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-application&dubbo=2.0.2&pid=2564&qos.enable=false&qos.port=22310&registry=nacos&release=2.7.3&timestamp=1620297272963, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,629 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,631 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&bind.ip=192.168.31.2&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,634 WARN [main][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&bind.ip=192.168.31.2&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,634 WARN [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&bind.ip=192.168.31.2&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,640 WARN [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,644 INFO [main][ReferenceConfig.java:356] -  [DUBBO] Using injvm service com.shanjupay.merchant.service.SmsService, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,644 INFO [main][ReferenceConfig.java:421] -  [DUBBO] Refer dubbo service com.shanjupay.merchant.service.SmsService from url injvm://127.0.0.1/com.shanjupay.merchant.service.SmsService?application=merchant-application&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.service.SmsService&lazy=false&methods=checkVerifyCode,sendMsg&pid=2564&qos.enable=false&qos.port=22310&register.ip=192.168.31.2&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297274640, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,658 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-57010"]
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,678 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 57010 (http) with context path '/merchant'
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,698 WARN [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,708 INFO [main][ServiceConfig.java:643] -  [DUBBO] Export dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService to local registry url : injvm://127.0.0.1/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&bind.ip=192.168.31.2&bind.port=20891&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620297274699&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,709 INFO [main][ServiceConfig.java:581] -  [DUBBO] Export dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService to url dubbo://192.168.31.2:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&bind.ip=192.168.31.2&bind.port=20891&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620297274699&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,709 INFO [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,710 INFO [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService url dubbo://192.168.31.2:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&bind.ip=192.168.31.2&bind.port=20891&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620297274699&version=1.0.0 to registry registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-application&dubbo=2.0.2&pid=2564&qos.enable=false&qos.port=22310&registry=nacos&release=2.7.3&timestamp=1620297274699, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,710 INFO [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://192.168.31.2:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=2564&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620297274699&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,712 INFO [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://192.168.31.2:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&bind.ip=192.168.31.2&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620297274699&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,714 WARN [main][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.31.2:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&bind.ip=192.168.31.2&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620297274699&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,715 WARN [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.31.2:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&bind.ip=192.168.31.2&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620297274699&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,715 INFO [main][DubboMetadataServiceExporter.java:86] - The Dubbo service[<dubbo:service path="com.alibaba.cloud.dubbo.service.DubboMetadataService" ref="com.alibaba.cloud.dubbo.service.IntrospectiveDubboMetadataService@4266a43d" prefix="dubbo.service.com.alibaba.cloud.dubbo.service.DubboMetadataService" generic="false" exported="true" unexported="false" interface="com.alibaba.cloud.dubbo.service.DubboMetadataService" version="1.0.0" dynamic="true" group="merchant-application" deprecated="false" register="true" id="com.alibaba.cloud.dubbo.service.DubboMetadataService" valid="true" />] has been exported.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,743 INFO [main][NacosServiceRegistry.java:62] - nacos registry, merchant-application 192.168.31.31:57010 register finished
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:34,748 INFO [main][StartupInfoLogger.java:59] - Started MerchantApplicationBootstrap in 18.236 seconds (JVM running for 23.066)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:35,237 INFO [RMI TCP Connection(1)-192.168.31.2][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:35,237 INFO [RMI TCP Connection(1)-192.168.31.2][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:35,259 INFO [RMI TCP Connection(1)-192.168.31.2][FrameworkServlet.java:546] - Completed initialization in 22 ms
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:34:35,647 WARN [com.alibaba.nacos.naming.push.receiver][HostReactor.java:110] - out of date data received, old-t: 1620297275642, new-t: 1620297275641
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:35:02,670 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:35:26,865 INFO [http-nio-57010-exec-2][SmsServiceImpl.java:74] - 检验验证码响应内容:{"code":0,"msg":"","result":false}
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:35:26,876 ERROR [http-nio-57010-exec-2][ExceptionFilter.java:86] -  [DUBBO] Got unchecked and undeclared exception which called by 127.0.0.1. service: com.shanjupay.merchant.service.SmsService, method: checkVerifyCode, exception: com.shanjupay.common.domain.BusinessException: null, dubbo version: 2.7.3, current host: 192.168.31.2
+com.shanjupay.common.domain.BusinessException
+	at com.shanjupay.merchant.service.SmsServiceImpl.checkVerifyCode(SmsServiceImpl.java:83)
+	at org.apache.dubbo.common.bytecode.Wrapper2.invokeMethod(Wrapper2.java)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:47)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:84)
+	at org.apache.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:55)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:92)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:48)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:81)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:96)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:148)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:41)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.invoke(ProtocolFilterWrapper.java:157)
+	at org.apache.dubbo.rpc.protocol.injvm.InjvmInvoker.doInvoke(InjvmInvoker.java:63)
+	at org.apache.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:155)
+	at org.apache.dubbo.rpc.protocol.AsyncToSyncInvoker.invoke(AsyncToSyncInvoker.java:52)
+	at org.apache.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:78)
+	at org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:92)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:54)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:58)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.invoke(ProtocolFilterWrapper.java:157)
+	at org.apache.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:55)
+	at org.apache.dubbo.common.bytecode.proxy2.checkVerifyCode(proxy2.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor$ReferenceBeanInvocationHandler.invoke(ReferenceAnnotationBeanPostProcessor.java:260)
+	at com.sun.proxy.$Proxy147.checkVerifyCode(Unknown Source)
+	at com.shanjupay.merchant.controller.MerchantController.registerMerchant(MerchantController.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:679)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:35:52,893 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:35:52,890 ERROR [http-nio-57010-exec-2][GlobalExceptionHandler.java:49] - 系统异常：
+java.lang.RuntimeException: com.shanjupay.common.domain.BusinessException
+com.shanjupay.common.domain.BusinessException
+	at com.shanjupay.merchant.service.SmsServiceImpl.checkVerifyCode(SmsServiceImpl.java:83)
+	at org.apache.dubbo.common.bytecode.Wrapper2.invokeMethod(Wrapper2.java)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:47)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:84)
+	at org.apache.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:55)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:92)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:48)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:81)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:96)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:148)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:41)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.invoke(ProtocolFilterWrapper.java:157)
+	at org.apache.dubbo.rpc.protocol.injvm.InjvmInvoker.doInvoke(InjvmInvoker.java:63)
+	at org.apache.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:155)
+	at org.apache.dubbo.rpc.protocol.AsyncToSyncInvoker.invoke(AsyncToSyncInvoker.java:52)
+	at org.apache.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:78)
+	at org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:92)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:54)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:58)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.invoke(ProtocolFilterWrapper.java:157)
+	at org.apache.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:55)
+	at org.apache.dubbo.common.bytecode.proxy2.checkVerifyCode(proxy2.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor$ReferenceBeanInvocationHandler.invoke(ReferenceAnnotationBeanPostProcessor.java:260)
+	at com.sun.proxy.$Proxy147.checkVerifyCode(Unknown Source)
+	at com.shanjupay.merchant.controller.MerchantController.registerMerchant(MerchantController.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:679)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+	at org.apache.dubbo.rpc.filter.ExceptionFilter$ExceptionListener.onResponse(ExceptionFilter.java:105)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.lambda$invoke$0(ProtocolFilterWrapper.java:167)
+	at org.apache.dubbo.rpc.AsyncRpcResult.lambda$whenCompleteWithContext$0(AsyncRpcResult.java:155)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:760)
+	at java.util.concurrent.CompletableFuture.uniWhenCompleteStage(CompletableFuture.java:778)
+	at java.util.concurrent.CompletableFuture.whenComplete(CompletableFuture.java:2140)
+	at org.apache.dubbo.rpc.AsyncRpcResult.whenCompleteWithContext(AsyncRpcResult.java:153)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.invoke(ProtocolFilterWrapper.java:159)
+	at org.apache.dubbo.rpc.protocol.injvm.InjvmInvoker.doInvoke(InjvmInvoker.java:63)
+	at org.apache.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:155)
+	at org.apache.dubbo.rpc.protocol.AsyncToSyncInvoker.invoke(AsyncToSyncInvoker.java:52)
+	at org.apache.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:78)
+	at org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:92)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:54)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:58)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.invoke(ProtocolFilterWrapper.java:157)
+	at org.apache.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:55)
+	at org.apache.dubbo.common.bytecode.proxy2.checkVerifyCode(proxy2.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor$ReferenceBeanInvocationHandler.invoke(ReferenceAnnotationBeanPostProcessor.java:260)
+	at com.sun.proxy.$Proxy147.checkVerifyCode(Unknown Source)
+	at com.shanjupay.merchant.controller.MerchantController.registerMerchant(MerchantController.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:679)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:36:22,912 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:36:52,918 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:37:22,928 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:37:52,943 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:38:26,461 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:38:29,106 INFO [http-nio-57010-exec-4][SmsServiceImpl.java:74] - 检验验证码响应内容:{"code":0,"msg":"","result":false}
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:38:49,588 ERROR [http-nio-57010-exec-4][ExceptionFilter.java:86] -  [DUBBO] Got unchecked and undeclared exception which called by 127.0.0.1. service: com.shanjupay.merchant.service.SmsService, method: checkVerifyCode, exception: com.shanjupay.common.domain.BusinessException: null, dubbo version: 2.7.3, current host: 192.168.31.2
+com.shanjupay.common.domain.BusinessException
+	at com.shanjupay.merchant.service.SmsServiceImpl.checkVerifyCode(SmsServiceImpl.java:83)
+	at org.apache.dubbo.common.bytecode.Wrapper2.invokeMethod(Wrapper2.java)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:47)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:84)
+	at org.apache.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:55)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:92)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:48)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:81)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:96)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:148)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:41)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.invoke(ProtocolFilterWrapper.java:157)
+	at org.apache.dubbo.rpc.protocol.injvm.InjvmInvoker.doInvoke(InjvmInvoker.java:63)
+	at org.apache.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:155)
+	at org.apache.dubbo.rpc.protocol.AsyncToSyncInvoker.invoke(AsyncToSyncInvoker.java:52)
+	at org.apache.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:78)
+	at org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:92)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:54)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:58)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.invoke(ProtocolFilterWrapper.java:157)
+	at org.apache.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:55)
+	at org.apache.dubbo.common.bytecode.proxy2.checkVerifyCode(proxy2.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor$ReferenceBeanInvocationHandler.invoke(ReferenceAnnotationBeanPostProcessor.java:260)
+	at com.sun.proxy.$Proxy147.checkVerifyCode(Unknown Source)
+	at com.shanjupay.merchant.controller.MerchantController.registerMerchant(MerchantController.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:679)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:39:41,253 WARN [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:39:41,250 ERROR [http-nio-57010-exec-4][GlobalExceptionHandler.java:49] - 系统异常：
+java.lang.RuntimeException: com.shanjupay.common.domain.BusinessException
+com.shanjupay.common.domain.BusinessException
+	at com.shanjupay.merchant.service.SmsServiceImpl.checkVerifyCode(SmsServiceImpl.java:83)
+	at org.apache.dubbo.common.bytecode.Wrapper2.invokeMethod(Wrapper2.java)
+	at org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:47)
+	at org.apache.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:84)
+	at org.apache.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:55)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:92)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:48)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:81)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:96)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:148)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:41)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.invoke(ProtocolFilterWrapper.java:157)
+	at org.apache.dubbo.rpc.protocol.injvm.InjvmInvoker.doInvoke(InjvmInvoker.java:63)
+	at org.apache.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:155)
+	at org.apache.dubbo.rpc.protocol.AsyncToSyncInvoker.invoke(AsyncToSyncInvoker.java:52)
+	at org.apache.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:78)
+	at org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:92)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:54)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:58)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.invoke(ProtocolFilterWrapper.java:157)
+	at org.apache.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:55)
+	at org.apache.dubbo.common.bytecode.proxy2.checkVerifyCode(proxy2.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor$ReferenceBeanInvocationHandler.invoke(ReferenceAnnotationBeanPostProcessor.java:260)
+	at com.sun.proxy.$Proxy147.checkVerifyCode(Unknown Source)
+	at com.shanjupay.merchant.controller.MerchantController.registerMerchant(MerchantController.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:679)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+	at org.apache.dubbo.rpc.filter.ExceptionFilter$ExceptionListener.onResponse(ExceptionFilter.java:105)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.lambda$invoke$0(ProtocolFilterWrapper.java:167)
+	at org.apache.dubbo.rpc.AsyncRpcResult.lambda$whenCompleteWithContext$0(AsyncRpcResult.java:155)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:760)
+	at java.util.concurrent.CompletableFuture.uniWhenCompleteStage(CompletableFuture.java:778)
+	at java.util.concurrent.CompletableFuture.whenComplete(CompletableFuture.java:2140)
+	at org.apache.dubbo.rpc.AsyncRpcResult.whenCompleteWithContext(AsyncRpcResult.java:153)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.invoke(ProtocolFilterWrapper.java:159)
+	at org.apache.dubbo.rpc.protocol.injvm.InjvmInvoker.doInvoke(InjvmInvoker.java:63)
+	at org.apache.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:155)
+	at org.apache.dubbo.rpc.protocol.AsyncToSyncInvoker.invoke(AsyncToSyncInvoker.java:52)
+	at org.apache.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:78)
+	at org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:92)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:54)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:58)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:82)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$CallbackRegistrationInvoker.invoke(ProtocolFilterWrapper.java:157)
+	at org.apache.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:55)
+	at org.apache.dubbo.common.bytecode.proxy2.checkVerifyCode(proxy2.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor$ReferenceBeanInvocationHandler.invoke(ReferenceAnnotationBeanPostProcessor.java:260)
+	at com.sun.proxy.$Proxy147.checkVerifyCode(Unknown Source)
+	at com.shanjupay.merchant.controller.MerchantController.registerMerchant(MerchantController.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:41002)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:679)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:39:41,260 WARN [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.31.2:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&bind.ip=192.168.31.2&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620297274699&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:39:41,260 WARN [com.alibaba.nacos.naming.push.receiver][HostReactor.java:110] - out of date data received, old-t: 1620297581250, new-t: 1620297530408
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:39:41,261 WARN [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&bind.ip=192.168.31.2&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:39:41,262 WARN [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&bind.ip=192.168.31.2&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:39:41,264 WARN [com.alibaba.nacos.naming.push.receiver][HostReactor.java:110] - out of date data received, old-t: 1620297581250, new-t: 1620297530407
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:39:41,265 WARN [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.31.2:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&bind.ip=192.168.31.2&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620297274699&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:39:47,186 WARN [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url consumer://192.168.31.2/org.apache.dubbo.rpc.service.GenericService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&generic=true&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269508&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:39:47,187 WARN [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url consumer://192.168.31.2/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryMerchantById,createMerchant&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269273, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:39:57,219 INFO [com.alibaba.nacos.naming.client.listener][DubboServiceDiscoveryAutoConfiguration.java:157] - The event of the service instances[name : merchant-service , size : 0] change is about to be dispatched
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:39:57,220 INFO [com.alibaba.nacos.naming.client.listener][AbstractSpringCloudRegistry.java:213] - The Dubbo Service URL[ID : consumer://192.168.31.2/com.shanjupay.merchant.api.MerchantService] is being subscribed for service[name : merchant-service]
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:39:57,221 WARN [com.alibaba.nacos.naming.client.listener][AbstractSpringCloudRegistry.java:249] - There is no instance from service[name : merchant-service], and then Dubbo Service[key : com.shanjupay.merchant.api.MerchantService] will not be available , please make sure the further impact
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:39:57,221 WARN [com.alibaba.nacos.naming.client.listener][RegistryDirectory.java:659] -  [DUBBO] Unsupported category providers,configurators,routers in notified url: empty://192.168.31.2/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryMerchantById,createMerchant&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269273 from registry localhost:9090 to consumer 192.168.31.2, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:39:57,221 INFO [com.alibaba.nacos.naming.client.listener][AbstractSpringCloudRegistry.java:213] - The Dubbo Service URL[ID : provider://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService] is being subscribed for service[name : merchant-service]
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:39:57,221 WARN [com.alibaba.nacos.naming.client.listener][AbstractSpringCloudRegistry.java:249] - There is no instance from service[name : merchant-service], and then Dubbo Service[key : com.shanjupay.merchant.service.SmsService] will not be available , please make sure the further impact
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,132 INFO [Thread-52][AbstractRegistry.java:291] -  [DUBBO] Unregister: dubbo://192.168.31.2:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=2564&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620297274699&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,135 INFO [Thread-52][AbstractRegistry.java:320] -  [DUBBO] Unsubscribe: provider://192.168.31.2:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&bind.ip=192.168.31.2&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620297274699&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,136 INFO [Thread-52][DubboMetadataServiceExporter.java:107] - The Dubbo service[<dubbo:service path="com.alibaba.cloud.dubbo.service.DubboMetadataService" ref="com.alibaba.cloud.dubbo.service.IntrospectiveDubboMetadataService@4266a43d" prefix="dubbo.service.com.alibaba.cloud.dubbo.service.DubboMetadataService" generic="false" exported="true" unexported="true" interface="com.alibaba.cloud.dubbo.service.DubboMetadataService" version="1.0.0" dynamic="true" group="merchant-application" deprecated="false" register="true" id="com.alibaba.cloud.dubbo.service.DubboMetadataService" valid="true" />] has been unexported.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,136 INFO [Exporter-Unexport-thread-1][RegistryProtocol.java:689] -  [DUBBO] Waiting 10000ms for registry to notify all consumers before unexport. Usually, this is called when you use dubbo API, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,136 INFO [Thread-52][AwaitingNonWebApplicationListener.java:155] -  [Dubbo] Current Spring Boot Application is about to shutdown...
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,136 INFO [Thread-52][AbstractRegistryFactory.java:68] -  [DUBBO] Close all registries [nacos://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-application&dubbo=2.0.2&interface=org.apache.dubbo.registry.RegistryService&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&timestamp=1620297269510], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,136 INFO [Thread-52][AbstractRegistry.java:458] -  [DUBBO] Destroy registry:nacos://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-application&dubbo=2.0.2&interface=org.apache.dubbo.registry.RegistryService&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&timestamp=1620297269510, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,136 INFO [Thread-52][AbstractRegistry.java:291] -  [DUBBO] Unregister: dubbo://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,140 INFO [Thread-52][AbstractRegistry.java:467] -  [DUBBO] Destroy unregister url dubbo://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,140 INFO [Thread-52][AbstractRegistry.java:291] -  [DUBBO] Unregister: consumer://192.168.31.2/org.apache.dubbo.rpc.service.GenericService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&generic=true&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269508&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,142 INFO [Thread-52][AbstractRegistry.java:467] -  [DUBBO] Destroy unregister url consumer://192.168.31.2/org.apache.dubbo.rpc.service.GenericService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&generic=true&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269508&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,142 INFO [Thread-52][AbstractRegistry.java:291] -  [DUBBO] Unregister: consumer://192.168.31.2/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryMerchantById,createMerchant&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269273, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,143 INFO [Thread-52][AbstractRegistry.java:467] -  [DUBBO] Destroy unregister url consumer://192.168.31.2/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryMerchantById,createMerchant&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269273, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,143 INFO [Thread-52][AbstractRegistry.java:320] -  [DUBBO] Unsubscribe: provider://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&bind.ip=192.168.31.2&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,144 INFO [Thread-52][AbstractRegistry.java:483] -  [DUBBO] Destroy unsubscribe url provider://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&bind.ip=192.168.31.2&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,144 INFO [Thread-52][AbstractRegistry.java:320] -  [DUBBO] Unsubscribe: consumer://192.168.31.2/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryMerchantById,createMerchant&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269273, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,144 INFO [Thread-52][AbstractRegistry.java:483] -  [DUBBO] Destroy unsubscribe url consumer://192.168.31.2/com.shanjupay.merchant.api.MerchantService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryMerchantById,createMerchant&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269273, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,144 INFO [Thread-52][AbstractRegistry.java:320] -  [DUBBO] Unsubscribe: consumer://192.168.31.2/org.apache.dubbo.rpc.service.GenericService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&generic=true&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269508&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,144 INFO [Thread-52][AbstractRegistry.java:483] -  [DUBBO] Destroy unsubscribe url consumer://192.168.31.2/org.apache.dubbo.rpc.service.GenericService?application=merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&generic=true&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=2564&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297269508&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,144 INFO [Thread-52][DubboProtocol.java:616] -  [DUBBO] Close dubbo server: /192.168.31.2:20891, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,145 INFO [Thread-52][AbstractServer.java:153] -  [DUBBO] Close NettyServer bind /0.0.0.0:20891, export /192.168.31.2:20891, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,147 INFO [Thread-52][DubboProtocol.java:654] -  [DUBBO] Close dubbo connect: 192.168.31.2:0-->/192.168.31.2:20890, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,148 INFO [Thread-52][DubboProtocol.java:654] -  [DUBBO] Close dubbo connect: 192.168.31.2:0-->/192.168.31.31:20890, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,150 INFO [Thread-52][AbstractProtocol.java:66] -  [DUBBO] Destroy reference: dubbo://192.168.31.2:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&bind.ip=192.168.31.2&bind.port=20890&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=true&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=2564&qos.enable=false&qos.port=22310&register=true&register.ip=192.168.31.2&release=2.7.3&remote.application=merchant-service&retries=-1&revision=2.1.0.RELEASE&side=consumer&sticky=false&timeout=3000&timestamp=1620297246874&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,150 INFO [Thread-52][AbstractProtocol.java:66] -  [DUBBO] Destroy reference: dubbo://192.168.31.2:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&category=providers&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=true&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&path=com.alibaba.cloud.dubbo.service.DubboMetadataService&pid=2564&protocol=dubbo&qos.enable=false&qos.port=22310&register=true&register.ip=192.168.31.2&release=2.7.3&remote.application=merchant-service&retries=-1&revision=2.1.0.RELEASE&side=consumer&sticky=false&timeout=3000&timestamp=1620297246874&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,150 INFO [Thread-52][AbstractProtocol.java:66] -  [DUBBO] Destroy reference: dubbo://192.168.31.31:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryMerchantById,createMerchant&pid=2564&qos.enable=false&qos.port=22310&register=true&register.ip=192.168.31.2&release=2.7.3&remote.application=merchant-service&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297244264, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,150 INFO [Thread-52][AbstractProtocol.java:66] -  [DUBBO] Destroy reference: dubbo://192.168.31.2:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&category=providers&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryMerchantById,createMerchant&path=com.shanjupay.merchant.api.MerchantService&pid=2564&protocol=dubbo&qos.enable=false&qos.port=22310&register=true&register.ip=192.168.31.2&release=2.7.3&remote.application=merchant-service&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620297244264, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,150 INFO [Thread-52][AbstractProtocol.java:79] -  [DUBBO] Unexport service: dubbo://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&bind.ip=192.168.31.2&bind.port=20891&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,150 INFO [Thread-52][AbstractProtocol.java:79] -  [DUBBO] Unexport service: dubbo://192.168.31.2:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&bind.ip=192.168.31.2&bind.port=20891&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620297274699&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,152 INFO [Thread-52][Server.java:112] -  [DUBBO] qos-server stopped., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,153 INFO [Thread-52][AbstractProtocol.java:79] -  [DUBBO] Unexport service: injvm://127.0.0.1/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&bind.ip=192.168.31.2&bind.port=20891&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,153 INFO [Thread-52][AbstractRegistry.java:291] -  [DUBBO] Unregister: dubbo://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,153 INFO [Thread-52][AbstractRegistry.java:320] -  [DUBBO] Unsubscribe: provider://192.168.31.2:20891/com.shanjupay.merchant.service.SmsService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.service.SmsService&bind.ip=192.168.31.2&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.service.SmsService&methods=checkVerifyCode,sendMsg&pid=2564&qos.enable=false&qos.port=22310&register=true&release=2.7.3&side=provider&timestamp=1620297272964, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,154 INFO [Exporter-Unexport-thread-1][RegistryProtocol.java:689] -  [DUBBO] Waiting 10000ms for registry to notify all consumers before unexport. Usually, this is called when you use dubbo API, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,158 INFO [Thread-52][NacosServiceRegistry.java:74] - De-registering from Nacos Server now...
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,159 INFO [Thread-52][NacosServiceRegistry.java:93] - De-registration finished.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,162 INFO [Thread-52][ExecutorConfigurationSupport.java:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,171 INFO [Thread-52][DubboGenericServiceFactory.java:159] - The Dubbo GenericService ReferenceBeans are destroying...
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,171 INFO [Thread-52][DubboGenericServiceFactory.java:164] - Destroyed the ReferenceBean  : <dubbo:reference singleton="true" prefix="dubbo.reference.com.alibaba.cloud.dubbo.service.DubboMetadataService" interface="com.alibaba.cloud.dubbo.service.DubboMetadataService" generic="true" version="1.0.0" generic="true" group="merchant-service" sticky="false" lazy="false" id="com.alibaba.cloud.dubbo.service.DubboMetadataService" valid="true" /> 
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,172 INFO [Thread-52][AnnotationInjectedBeanPostProcessor.java:293] - org.apache.dubbo.common.bytecode.proxy2@7a4790a9 was destroying!
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,173 INFO [Thread-52][AnnotationInjectedBeanPostProcessor.java:293] - org.apache.dubbo.common.bytecode.proxy1@3b466f76 was destroying!
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-05-06 18:40:09,173 INFO [Thread-52][AnnotationInjectedBeanPostProcessor.java:305] - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!

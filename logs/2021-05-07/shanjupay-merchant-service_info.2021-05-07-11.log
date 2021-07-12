@@ -1,0 +1,485 @@
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:08,655 INFO
+            [main][:] - using logger: org.apache.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:08,666 INFO
+            [main][WelcomeLogoApplicationListener.java:63] - 
+
+ :: Dubbo Spring Boot (v2.7.1) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.7.3) : https://github.com/apache/incubator-dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:08,671 INFO
+            [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=merchant-service, dubbo.application.qos-enable=false, dubbo.application.qos-port=22240, dubbo.config.multiple=true, dubbo.consumer.check=true, dubbo.consumer.retries=-1, dubbo.consumer.timeout=90000, dubbo.protocol.name=dubbo, dubbo.protocol.port=20890, dubbo.registry.address=nacos://127.0.0.1:8848, dubbo.scan.base-packages=com.shanjupay}
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:09,050 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:09,133 INFO
+            [pool-6-thread-1][AwaitingNonWebApplicationListener.java:140] -  [Dubbo] Current Spring Boot Application is await...
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:10,789 INFO
+            [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=merchant-service, dubbo.application.qos-enable=false, dubbo.application.qos-port=22240, dubbo.config.multiple=true, dubbo.consumer.check=true, dubbo.consumer.retries=-1, dubbo.consumer.timeout=90000, dubbo.protocol.name=dubbo, dubbo.protocol.port=20890, dubbo.registry.address=nacos://127.0.0.1:8848, dubbo.scan.base-packages=com.shanjupay}
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:10,910 INFO
+            [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'spring-boot-http.yaml', group: 'COMMON_GROUP'
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:10,916 INFO
+            [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'spring-boot-starter-druid.yaml', group: 'COMMON_GROUP'
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:10,921 INFO
+            [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'spring-boot-mybatis-plus.yaml', group: 'COMMON_GROUP'
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:10,925 INFO
+            [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'merchant-service.yaml', group: 'SHANJUPAY_GROUP'
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:10,926 INFO
+            [main][PropertySourceBootstrapConfiguration.java:98] - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='merchant-service.yaml'}, NacosPropertySource {name='spring-boot-mybatis-plus.yaml'}, NacosPropertySource {name='spring-boot-starter-druid.yaml'}, NacosPropertySource {name='spring-boot-http.yaml'}]}
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:10,947 INFO
+            [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:11,499 WARN
+            [main][EndpointId.java:135] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:11,502 WARN
+            [main][EndpointId.java:135] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:11,530 INFO
+            [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, class : org.apache.dubbo.config.ApplicationConfig] has been registered.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:11,531 INFO
+            [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ApplicationConfig#0] has been registered.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:11,531 INFO
+            [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.RegistryConfig#0, class : org.apache.dubbo.config.RegistryConfig] has been registered.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:11,532 INFO
+            [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.RegistryConfig#0] has been registered.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:11,532 INFO
+            [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, class : org.apache.dubbo.config.ProtocolConfig] has been registered.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:11,532 INFO
+            [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ProtocolConfig#0] has been registered.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:11,533 INFO
+            [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ConsumerConfig#0, class : org.apache.dubbo.config.ConsumerConfig] has been registered.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:11,533 INFO
+            [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ConsumerConfig#0] has been registered.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:11,708 WARN
+            [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:11,767 INFO
+            [main][ServiceAnnotationBeanPostProcessor.java:204] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:11,768 INFO
+            [main][ServiceAnnotationBeanPostProcessor.java:206] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:11,789 INFO
+            [main][ServiceAnnotationBeanPostProcessor.java:284] -  [DUBBO] The BeanDefinition[Root bean: class [org.apache.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] of ServiceBean has been registered with name : ServiceBean:com.shanjupay.merchant.api.MerchantService, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:11,789 INFO
+            [main][ServiceAnnotationBeanPostProcessor.java:161] -  [DUBBO] 1 annotated Dubbo's @Service Components { [Bean definition with name 'merchantServiceImpl': Generic bean: class [com.shanjupay.merchant.service.MerchantServiceImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\workplace\idea\learn\shanjupay\shanjupay-merchant\shanjupay-merchant-service\target\classes\com\shanjupay\merchant\service\MerchantServiceImpl.class]] } were scanned under package[com.shanjupay], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:11,792 INFO
+            [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:11,793 INFO
+            [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,085 INFO
+            [main][GenericScope.java:294] - BeanFactory id=000efb24-c3f3-3bec-b674-bf8f9b9377b7
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,122 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,236 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,337 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,349 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,353 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,368 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubbo.cloud-com.alibaba.cloud.dubbo.env.DubboCloudProperties' of type [com.alibaba.cloud.dubbo.env.DubboCloudProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,384 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'metadataJsonResolver' of type [com.alibaba.cloud.dubbo.metadata.resolver.DubboServiceBeanMetadataResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,395 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.apache.dubbo.config.ApplicationConfig#0' of type [org.apache.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,400 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboProtocolConfigSupplier' of type [com.alibaba.cloud.dubbo.metadata.DubboProtocolConfigSupplier] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,402 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,403 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,408 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,424 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboGenericServiceFactory' of type [com.alibaba.cloud.dubbo.service.DubboGenericServiceFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,427 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboMetadataConfigServiceProxy' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,433 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,438 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,450 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.commons.util.UtilAutoConfiguration' of type [org.springframework.cloud.commons.util.UtilAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,459 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtilsProperties' of type [org.springframework.cloud.commons.util.InetUtilsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:12,461 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtils' of type [org.springframework.cloud.commons.util.InetUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:14,300 INFO
+            [main][InetUtils.java:170] - Cannot determine local hostname
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:14,301 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosProperties' of type [com.alibaba.cloud.nacos.NacosDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:14,306 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosDiscoveryClient' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:14,325 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties' of type [org.springframework.boot.autoconfigure.web.ServerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:14,328 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:15,881 INFO
+            [main][InetUtils.java:170] - Cannot determine local hostname
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:15,884 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryProperties' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:15,887 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryClient' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:15,892 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'compositeDiscoveryClient' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:15,896 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.util.JSONUtils' of type [com.alibaba.cloud.dubbo.util.JSONUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:15,965 WARN
+            [main][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:15,966 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository' of type [com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,000 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestParamServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestParamServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,018 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties' of type [org.springframework.boot.autoconfigure.http.HttpProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,022 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,031 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'stringHttpMessageConverter' of type [org.springframework.http.converter.StringHttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,036 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,042 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,049 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,054 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,060 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,065 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,074 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,090 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,095 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,108 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,113 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,143 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,155 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'mappingJackson2HttpMessageConverter' of type [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,161 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration' of type [org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,171 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'messageConverters' of type [org.springframework.boot.autoconfigure.http.HttpMessageConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,183 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestBodyServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestBodyServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,190 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestHeaderServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestHeaderServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,196 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.PathVariableServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.PathVariableServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,197 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.DubboGenericServiceExecutionContextFactory' of type [com.alibaba.cloud.dubbo.service.DubboGenericServiceExecutionContextFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,220 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,227 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,230 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,232 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,241 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,676 INFO
+            [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 56040 (http)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,692 INFO
+            [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-56040"]
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,699 INFO
+            [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,700 INFO
+            [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,706 INFO
+            [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\usr\local\jdk\jdk1.8.0_152\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\usr\local\jdk\jdk1.8.0_152\bin;D:\usr\local\mysql\mysql-5.7.29-winx64\bin;D:\usr\local\maven\apache-maven-3.6.3\bin;D:\Program Files\Git\cmd;D:\usr\local\nodejs\;D:\usr\local\Redis\;D:\PostgreSQL\11\bin;D:\usr\local\wkhtmltox-0.12.5-1.mxe-cross-win64\wkhtmltox\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\usr\local\hadoop2.7.5\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\chase\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\chase\AppData\Local\Programs\Python\Python37\;C:\Users\chase\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;C:\Users\chase\AppData\Roaming\npm;C:\Users\chase\.dotnet\tools;D:\heroku\bin;.]
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,863 INFO
+            [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:16,863 INFO
+            [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 5906 ms
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:17,329 INFO
+            [main][DruidDataSourceAutoConfigure.java:56] - Init DruidDataSource
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:17,593 INFO
+            [main][DruidDataSource.java:1002] - {dataSource-1} inited
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:18,679 WARN
+            [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:18,679 INFO
+            [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:18,683 WARN
+            [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:18,683 INFO
+            [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:18,868 INFO
+            [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:19,237 INFO
+            [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:19,274 INFO
+            [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.RegistryConfig#0] have been binding by prefix of configuration properties : dubbo.registry
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:19,282 INFO
+            [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.ProtocolConfig#0] have been binding by prefix of configuration properties : dubbo.protocol
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:19,298 INFO
+            [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.ConsumerConfig#0] have been binding by prefix of configuration properties : dubbo.consumer
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:19,816 INFO
+            [main][EndpointLinksResolver.java:59] - Exposing 4 endpoint(s) beneath base path '/actuator'
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:20,060 INFO
+            [main][DubboServiceMetadataRepository.java:280] - The metadata of Dubbo service[name : merchant-application] is about to be initialized
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:20,080 WARN
+            [main][DubboServiceMetadataRepository.java:484] - The Spring application[name : merchant-application] does not expose The REST metadata in the Dubbo services.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:20,080 INFO
+            [main][DubboServiceMetadataRepository.java:262] - The metadata of Dubbo services has been initialized
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:20,138 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:20,141 INFO
+            [com.alibaba.nacos.naming.client.listener][DubboServiceDiscoveryAutoConfiguration.java:157] - The event of the service instances[name : merchant-application , size : 0] change is about to be dispatched
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:20,148 INFO
+            [main][ServiceBean.java:112] -  [DUBBO] The service ready on spring started. service: com.shanjupay.merchant.api.MerchantService, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:20,164 WARN
+            [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:20,230 INFO
+            [main][ServiceConfig.java:643] -  [DUBBO] Export dubbo service com.shanjupay.merchant.api.MerchantService to local registry url : injvm://127.0.0.1/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&bind.ip=192.168.31.2&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=14120&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1620357500168, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:20,231 INFO
+            [main][ServiceConfig.java:581] -  [DUBBO] Export dubbo service com.shanjupay.merchant.api.MerchantService to url dubbo://192.168.31.2:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&bind.ip=192.168.31.2&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=14120&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1620357500168, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:20,231 INFO
+            [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:20,232 INFO
+            [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service com.shanjupay.merchant.api.MerchantService url dubbo://192.168.31.2:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&bind.ip=192.168.31.2&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=14120&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1620357500168 to registry registry://localhost:9090/org.apache.dubbo.registry.RegistryService?application=merchant-service&dubbo=2.0.2&pid=14120&qos.enable=false&qos.port=22240&registry=spring-cloud&release=2.7.3&timestamp=1620357500165, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:20,254 INFO
+            [main][QosProtocolWrapper.java:89] -  [DUBBO] qos won't be started because it is disabled. Please check dubbo.application.qos.enable is configured either in system property, dubbo.properties or XML/spring-boot configuration., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:21,049 INFO
+            [main][AbstractServer.java:73] -  [DUBBO] Start NettyServer bind /0.0.0.0:20890, export /192.168.31.2:20890, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:21,050 WARN
+            [main][SpringExtensionFactory.java:86] -  [DUBBO] No spring extension (bean) named:applicationContext, try to find an extension (bean) of type org.springframework.context.ConfigurableApplicationContext, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:21,051 WARN
+            [main][SpringExtensionFactory.java:104] -  [DUBBO] No spring extension (bean) named:applicationContext, type:org.springframework.context.ConfigurableApplicationContext found, stop get bean., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:21,059 INFO
+            [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://192.168.31.2:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=14120&register=true&release=2.7.3&side=provider&timestamp=1620357500168, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:22,967 INFO
+            [main][InetUtils.java:170] - Cannot determine local hostname
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:22,967 INFO
+            [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://192.168.31.2:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&bind.ip=192.168.31.2&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=14120&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1620357500168, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:22,970 INFO
+            [main][AbstractSpringCloudRegistry.java:213] - The Dubbo Service URL[ID : provider://192.168.31.2:20890/com.shanjupay.merchant.api.MerchantService] is being subscribed for service[name : merchant-application]
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:22,971 INFO
+            [main][AbstractSpringCloudRegistry.java:223] - The metadata of Dubbo service[key : com.shanjupay.merchant.api.MerchantService] can't be found when the subscribed service[name : merchant-application], and then try to initialize it
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:22,971 WARN
+            [main][AbstractSpringCloudRegistry.java:234] - The metadata of Dubbo service[key : com.shanjupay.merchant.api.MerchantService] still can't be found, it could effect the further Dubbo service invocation
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:22,972 INFO
+            [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:22,973 INFO
+            [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service com.shanjupay.merchant.api.MerchantService url dubbo://192.168.31.2:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&bind.ip=192.168.31.2&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=14120&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1620357500168 to registry registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-service&dubbo=2.0.2&pid=14120&qos.enable=false&qos.port=22240&registry=nacos&release=2.7.3&timestamp=1620357500167, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:22,977 INFO
+            [main][AbstractRegistry.java:212] -  [DUBBO] Load registry cache file C:\Users\chase\.dubbo\dubbo-registry-merchant-service-127.0.0.1:8848.cache, data: {merchant--application/com.alibaba.cloud.dubbo.service.DubboMetadataService:1.0.0=dubbo://192.168.31.2:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant--application&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant--application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&path=com.alibaba.cloud.dubbo.service.DubboMetadataService&pid=11592&protocol=dubbo&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1619764942708&version=1.0.0, merchant-application/com.alibaba.cloud.dubbo.service.DubboMetadataService:1.0.0=dubbo://192.168.31.2:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-application&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&path=com.alibaba.cloud.dubbo.service.DubboMetadataService&pid=9448&protocol=dubbo&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620354303368&version=1.0.0}, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:22,977 INFO
+            [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://192.168.31.2:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=14120&register=true&release=2.7.3&side=provider&timestamp=1620357500168, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:22,988 INFO
+            [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://192.168.31.2:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&bind.ip=192.168.31.2&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=14120&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1620357500168, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,009 WARN
+            [main][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.31.2:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&bind.ip=192.168.31.2&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=14120&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1620357500168, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,009 WARN
+            [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.31.2:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-service&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&bind.ip=192.168.31.2&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.shanjupay.merchant.api.MerchantService&methods=queryMerchantById,createMerchant&pid=14120&qos.enable=false&qos.port=22240&register=true&release=2.7.3&side=provider&timestamp=1620357500168, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,014 INFO
+            [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-56040"]
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,031 INFO
+            [main][TomcatWebServer.java:204] - Tomcat started on port(s): 56040 (http) with context path '/merchant‐service'
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,047 WARN
+            [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,059 INFO
+            [main][ServiceConfig.java:643] -  [DUBBO] Export dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService to local registry url : injvm://127.0.0.1/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.31.2&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=14120&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620357503047&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,060 INFO
+            [main][ServiceConfig.java:581] -  [DUBBO] Export dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService to url dubbo://192.168.31.2:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.31.2&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=14120&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620357503047&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,060 INFO
+            [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,060 INFO
+            [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService url dubbo://192.168.31.2:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.31.2&bind.port=20890&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=14120&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620357503047&version=1.0.0 to registry registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=merchant-service&dubbo=2.0.2&pid=14120&qos.enable=false&qos.port=22240&registry=nacos&release=2.7.3&timestamp=1620357503047, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,062 INFO
+            [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://192.168.31.2:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=14120&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620357503047&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,064 INFO
+            [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://192.168.31.2:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.31.2&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=14120&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620357503047&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,067 WARN
+            [main][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.31.2:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.31.2&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=14120&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620357503047&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,068 WARN
+            [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.31.2:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=merchant-service&bind.ip=192.168.31.2&bind.port=20890&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=14120&qos.enable=false&qos.port=22240&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1620357503047&version=1.0.0, dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,068 INFO
+            [main][DubboMetadataServiceExporter.java:86] - The Dubbo service[<dubbo:service path="com.alibaba.cloud.dubbo.service.DubboMetadataService" ref="com.alibaba.cloud.dubbo.service.IntrospectiveDubboMetadataService@7a8c01ef" prefix="dubbo.service.com.alibaba.cloud.dubbo.service.DubboMetadataService" generic="false" unexported="false" exported="true" interface="com.alibaba.cloud.dubbo.service.DubboMetadataService" version="1.0.0" dynamic="true" group="merchant-service" register="true" deprecated="false" id="com.alibaba.cloud.dubbo.service.DubboMetadataService" valid="true" />] has been exported.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,090 INFO
+            [main][NacosServiceRegistry.java:62] - nacos registry, merchant-service 192.168.31.32:56040 register finished
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,094 INFO
+            [main][StartupInfoLogger.java:59] - Started MerchantBootstrap in 16.736 seconds (JVM running for 21.014)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,567 INFO
+            [RMI TCP Connection(9)-192.168.31.2][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,568 INFO
+            [RMI TCP Connection(9)-192.168.31.2][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:23,593 INFO
+            [RMI TCP Connection(9)-192.168.31.2][FrameworkServlet.java:546] - Completed initialization in 24 ms
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:29,905 INFO
+            [com.alibaba.nacos.naming.client.listener][DubboServiceDiscoveryAutoConfiguration.java:157] - The event of the service instances[name : merchant-application , size : 1] change is about to be dispatched
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:29,906 INFO
+            [com.alibaba.nacos.naming.client.listener][AbstractSpringCloudRegistry.java:213] - The Dubbo Service URL[ID : provider://192.168.31.2:20890/com.shanjupay.merchant.api.MerchantService] is being subscribed for service[name : merchant-application]
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:29,906 INFO
+            [com.alibaba.nacos.naming.client.listener][AbstractSpringCloudRegistry.java:223] - The metadata of Dubbo service[key : com.shanjupay.merchant.api.MerchantService] can't be found when the subscribed service[name : merchant-application], and then try to initialize it
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:29,906 WARN
+            [com.alibaba.nacos.naming.client.listener][AbstractSpringCloudRegistry.java:234] - The metadata of Dubbo service[key : com.shanjupay.merchant.api.MerchantService] still can't be found, it could effect the further Dubbo service invocation
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:18:50,162 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:19:20,172 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:19:50,186 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:20:20,201 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:20:50,205 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:21:20,219 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:21:50,236 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:22:20,246 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:22:50,261 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:23:20,266 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:23:50,278 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:24:20,285 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:24:50,294 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:25:20,302 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:25:50,309 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:26:20,323 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:26:50,343 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:27:20,356 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:27:50,369 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:28:20,383 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:28:50,393 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:29:20,407 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:29:50,421 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:30:20,435 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:30:50,442 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:31:20,453 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:31:50,470 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:32:20,475 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:32:50,487 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:33:20,503 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:33:50,521 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:34:20,537 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:34:50,546 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:35:20,561 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:35:50,567 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:36:20,581 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:36:50,586 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:37:20,597 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:37:50,601 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:38:20,617 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:38:50,629 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:39:20,642 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:39:50,652 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:40:20,664 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:40:50,670 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:41:20,688 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:41:50,699 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:42:20,722 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:42:50,741 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:43:20,747 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:43:50,763 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:44:20,780 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:44:50,791 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:45:20,808 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:45:50,822 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:46:20,838 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:46:50,848 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:47:20,854 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:47:50,864 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:48:20,886 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:48:50,904 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:49:20,914 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:49:50,928 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:50:20,933 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:50:50,948 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:51:20,961 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:51:50,974 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:52:20,991 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:52:51,004 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:53:21,022 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:53:51,030 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:54:21,054 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:54:51,072 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:55:21,086 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:55:51,090 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:56:21,107 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:56:51,117 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:57:21,123 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:57:51,141 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:58:21,146 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:58:51,159 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:59:21,172 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-07 11:59:51,188 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services

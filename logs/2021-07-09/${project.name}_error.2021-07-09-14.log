@@ -1,0 +1,3 @@
+[${project.name}][${env:SERVER_PORT}] 2021-07-09 15:08:40,699 ERROR
+            [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-01b49e05-44c1-45a1-a091-fa9202fef81c][ServerHttpAgent.java:149] - [NACOS ConnectException httpPost] currentServerAddr: http://127.0.0.1:8848, err : Connection refused: connect
+[${project.name}][${env:SERVER_PORT}] 2021-07-09 15:08:40,699 ERROR [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-01b49e05-44c1-45a1-a091-fa9202fef81c][ServerHttpAgent.java:149] - [NACOS ConnectException httpPost] currentServerAddr: http://127.0.0.1:8848, err : Connection refused: connect

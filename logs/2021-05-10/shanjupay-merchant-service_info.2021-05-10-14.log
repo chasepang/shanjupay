@@ -1,0 +1,306 @@
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:06:30,279 INFO
+            [NettyServerWorker-3-1][NettyServerHandler.java:118] -  [DUBBO] IdleStateEvent triggered, close channel NettyChannel [channel=[id: 0x5e112f68, L:/192.168.31.2:20890 - R:/192.168.31.2:54930]], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:06:30,279 INFO
+            [NettyServerWorker-3-2][NettyServerHandler.java:118] -  [DUBBO] IdleStateEvent triggered, close channel NettyChannel [channel=[id: 0xa12c885e, L:/192.168.31.32:20890 - R:/192.168.31.32:54935]], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:06:30,280 INFO
+            [NettyServerWorker-3-2][NettyChannel.java:172] -  [DUBBO] Close netty channel [id: 0xa12c885e, L:/192.168.31.32:20890 - R:/192.168.31.32:54935], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:06:30,280 INFO
+            [NettyServerWorker-3-1][NettyChannel.java:172] -  [DUBBO] Close netty channel [id: 0x5e112f68, L:/192.168.31.2:20890 - R:/192.168.31.2:54930], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:06:30,281 ERROR
+            [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-01b49e05-44c1-45a1-a091-fa9202fef81c][ServerHttpAgent.java:151] - [NACOS SocketTimeoutException httpPost] currentServerAddr: http://127.0.0.1:8848， err : Read timed out
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:06:30,281 ERROR
+            [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-01b49e05-44c1-45a1-a091-fa9202fef81c][ServerHttpAgent.java:169] - no available server, currentServerAddr : http://127.0.0.1:8848
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:06:30,291 WARN
+            [NettyServerWorker-3-2][AbstractServer.java:213] -  [DUBBO] All clients has disconnected from /192.168.31.32:20890. You can graceful shutdown now., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:06:30,292 WARN
+            [NettyServerWorker-3-1][AbstractServer.java:213] -  [DUBBO] All clients has disconnected from /192.168.31.2:20890. You can graceful shutdown now., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:06:30,281 ERROR
+            [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-01b49e05-44c1-45a1-a091-fa9202fef81c][ClientWorker.java:389] - [fixed-127.0.0.1_8848-01b49e05-44c1-45a1-a091-fa9202fef81c] [check-update] get changed dataId exception
+java.net.ConnectException: no available server, currentServerAddr : http://127.0.0.1:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:170)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:64)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:377)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:352)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:512)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:06:30,306 ERROR
+            [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-01b49e05-44c1-45a1-a091-fa9202fef81c][ClientWorker.java:550] - longPolling error : 
+java.net.ConnectException: no available server, currentServerAddr : http://127.0.0.1:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:170)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:64)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:377)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:352)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:512)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:06:30,353 INFO
+            [dubbo-client-idleCheck-thread-1][ReconnectTimerTask.java:48] -  [DUBBO] Initial connection to HeaderExchangeClient [channel=org.apache.dubbo.remoting.transport.netty4.NettyClient [192.168.31.2:0 -> /192.168.31.2:20891]], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:06:30,395 INFO
+            [dubbo-client-idleCheck-thread-1][NettyClient.java:142] -  [DUBBO] Close old netty channel [id: 0xf05d5a59, L:/192.168.31.2:55065 ! R:/192.168.31.2:20891] on create new netty channel [id: 0xb43b9fdc, L:/192.168.31.2:58901 - R:/192.168.31.2:20891], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:06:30,397 INFO
+            [dubbo-client-idleCheck-thread-1][AbstractClient.java:199] -  [DUBBO] Succeed connect to server /192.168.31.2:20891 from NettyClient 192.168.31.2 using dubbo version 2.7.3, channel is NettyChannel [channel=[id: 0xb43b9fdc, L:/192.168.31.2:58901 - R:/192.168.31.2:20891]], dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:06:32,986 WARN
+            [DubboServerHandler-192.168.31.2:20890-thread-9][Logger.java:44] - No MyBatis mapper was found in '[com.shanjupay.**.mapper]' package. Please check your configuration.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:06:59,132 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:07:02,328 ERROR
+            [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-01b49e05-44c1-45a1-a091-fa9202fef81c][ServerHttpAgent.java:151] - [NACOS SocketTimeoutException httpPost] currentServerAddr: http://127.0.0.1:8848， err : Read timed out
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:07:02,328 ERROR
+            [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-01b49e05-44c1-45a1-a091-fa9202fef81c][ServerHttpAgent.java:169] - no available server, currentServerAddr : http://127.0.0.1:8848
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:07:02,328 ERROR
+            [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-01b49e05-44c1-45a1-a091-fa9202fef81c][ClientWorker.java:389] - [fixed-127.0.0.1_8848-01b49e05-44c1-45a1-a091-fa9202fef81c] [check-update] get changed dataId exception
+java.net.ConnectException: no available server, currentServerAddr : http://127.0.0.1:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:170)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:64)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:377)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:352)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:512)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:07:02,329 ERROR
+            [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-01b49e05-44c1-45a1-a091-fa9202fef81c][ClientWorker.java:550] - longPolling error : 
+java.net.ConnectException: no available server, currentServerAddr : http://127.0.0.1:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:170)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:64)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:377)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:352)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:512)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:07:29,139 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:07:59,155 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:08:29,167 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:08:59,179 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:09:29,192 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:09:59,196 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:10:29,203 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:10:59,210 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:11:29,212 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:11:59,227 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:12:29,232 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:12:59,241 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:13:29,250 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:13:59,264 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:14:29,283 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:14:59,298 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:15:29,316 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:15:59,330 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:16:29,346 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:16:59,360 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:17:29,370 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:17:59,384 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:18:29,398 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:18:59,403 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:19:29,415 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:19:59,424 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:20:29,441 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:20:59,450 WARN
+            [ThreadPoolTaskScheduler-1][Logger.java:44] - No MyBatis mapper was found in '[com.shanjupay.**.mapper]' package. Please check your configuration.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:20:59,461 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:21:29,467 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:21:59,480 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:22:29,489 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:22:59,506 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:23:29,520 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:23:59,533 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:24:29,537 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:24:59,555 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:25:29,569 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:25:59,577 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:26:29,588 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:26:59,604 WARN
+            [ThreadPoolTaskScheduler-1][Logger.java:44] - No MyBatis mapper was found in '[com.shanjupay.**.mapper]' package. Please check your configuration.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:26:59,610 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:27:29,622 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:27:59,638 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:28:29,643 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:28:59,659 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:29:29,675 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:29:59,683 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:30:29,695 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:30:59,700 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:31:29,703 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:31:59,710 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:32:29,714 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:32:59,721 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:33:29,727 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:33:59,741 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:34:29,751 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:34:59,767 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:35:29,780 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:35:59,793 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:36:29,810 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:36:59,824 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:37:29,834 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:37:59,842 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:38:29,851 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:38:59,866 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:39:29,882 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:39:59,895 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:40:29,904 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:40:59,918 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:41:29,928 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:41:59,934 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:42:29,947 WARN
+            [ThreadPoolTaskScheduler-1][Logger.java:44] - No MyBatis mapper was found in '[com.shanjupay.**.mapper]' package. Please check your configuration.
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:42:29,953 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:42:59,968 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:43:29,972 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:43:59,983 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:44:29,998 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:45:00,008 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:45:30,013 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:46:00,023 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:46:30,029 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:47:00,032 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:47:30,049 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:48:00,054 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:48:30,067 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:49:00,078 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:49:30,082 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:50:00,086 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:50:30,090 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:51:00,097 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:51:30,107 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:52:00,112 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:52:30,125 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:53:00,145 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:53:30,150 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:54:00,164 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:54:30,182 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:55:00,186 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:55:30,197 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:56:00,199 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:56:30,203 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:57:00,213 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:57:30,218 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:58:00,231 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:58:30,239 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:59:00,249 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[shanjupay-merchant-service][${env:SERVER_PORT}] 2021-05-10 14:59:30,255 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services

@@ -1,0 +1,178 @@
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:50,406 INFO
+            [main][:] - using logger: org.apache.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:50,410 INFO
+            [main][WelcomeLogoApplicationListener.java:63] - 
+
+ :: Dubbo Spring Boot (v2.7.1) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.7.3) : https://github.com/apache/incubator-dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:50,413 INFO
+            [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.qos-enable=false, dubbo.config.multiple=true}
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:50,582 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$afed098d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:50,619 INFO
+            [pool-3-thread-1][AwaitingNonWebApplicationListener.java:140] -  [Dubbo] Current Spring Boot Application is await...
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,200 INFO
+            [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.qos-enable=false, dubbo.config.multiple=true}
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,221 ERROR
+            [main][NacosConfigProperties.java:350] - create config service error!properties=NacosConfigProperties{serverAddr='null', encode='null', group='DEFAULT_GROUP', prefix='null', fileExtension='properties', timeout=3000, endpoint='null', namespace='null', accessKey='null', secretKey='null', contextPath='null', clusterName='null', name='null', sharedDataids='null', refreshableDataids='null', extConfig=null},e=,
+ErrCode:-400, ErrMsg:endpoint is blank
+	at com.alibaba.nacos.api.config.ConfigFactory.createConfigService(ConfigFactory.java:45)
+	at com.alibaba.nacos.api.NacosFactory.createConfigService(NacosFactory.java:43)
+	at com.alibaba.cloud.nacos.NacosConfigProperties.configServiceInstance(NacosConfigProperties.java:346)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:63)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:94)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:649)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.shanjupay.merchant.MerchantApplicationBootstrap.main(MerchantApplicationBootstrap.java:18)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.alibaba.nacos.api.config.ConfigFactory.createConfigService(ConfigFactory.java:42)
+	... 10 more
+Caused by: ErrCode:-400, ErrMsg:endpoint is blank
+	at com.alibaba.nacos.client.config.impl.ServerListManager.<init>(ServerListManager.java:154)
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.<init>(ServerHttpAgent.java:244)
+	at com.alibaba.nacos.client.config.NacosConfigService.<init>(NacosConfigService.java:83)
+	... 15 more
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,225 WARN
+            [main][NacosPropertySourceLocator.java:66] - no instance of config service found, can't load config from nacos
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,226 INFO
+            [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,486 WARN
+            [main][EndpointId.java:135] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,488 WARN
+            [main][EndpointId.java:135] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,492 INFO
+            [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, class : org.apache.dubbo.config.ApplicationConfig] has been registered.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,493 INFO
+            [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ApplicationConfig#0] has been registered.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,580 WARN
+            [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,672 INFO
+            [main][GenericScope.java:294] - BeanFactory id=3119c8bb-c050-3a88-965d-a1bf084f2992
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,677 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' of type [org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration$$EnhancerBySpringCGLIB$$c1c72ff6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,735 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration$$EnhancerBySpringCGLIB$$17945594] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,776 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubbo.cloud-com.alibaba.cloud.dubbo.env.DubboCloudProperties' of type [com.alibaba.cloud.dubbo.env.DubboCloudProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,784 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'metadataJsonResolver' of type [com.alibaba.cloud.dubbo.metadata.resolver.DubboServiceBeanMetadataResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,791 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.apache.dubbo.config.ApplicationConfig#0' of type [org.apache.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,793 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboProtocolConfigSupplier' of type [com.alibaba.cloud.dubbo.metadata.DubboProtocolConfigSupplier] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,794 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,795 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration$$EnhancerBySpringCGLIB$$89d3f20e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,797 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration$$EnhancerBySpringCGLIB$$1c7dfa66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,800 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboGenericServiceFactory' of type [com.alibaba.cloud.dubbo.service.DubboGenericServiceFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,802 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboMetadataConfigServiceProxy' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,805 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$dcc33420] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,808 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$d08e3ce5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,814 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.commons.util.UtilAutoConfiguration' of type [org.springframework.cloud.commons.util.UtilAutoConfiguration$$EnhancerBySpringCGLIB$$5b80d014] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,818 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtilsProperties' of type [org.springframework.cloud.commons.util.InetUtilsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:52,819 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtils' of type [org.springframework.cloud.commons.util.InetUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:54,375 INFO
+            [main][InetUtils.java:170] - Cannot determine local hostname
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:54,377 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosProperties' of type [com.alibaba.cloud.nacos.NacosDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:54,380 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosDiscoveryClient' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:54,388 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties' of type [org.springframework.boot.autoconfigure.web.ServerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:54,389 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$a8f1ccee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:55,948 INFO
+            [main][InetUtils.java:170] - Cannot determine local hostname
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:55,952 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryProperties' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:55,954 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryClient' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:55,956 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'compositeDiscoveryClient' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:55,958 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.util.JSONUtils' of type [com.alibaba.cloud.dubbo.util.JSONUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:55,960 WARN
+            [main][AbstractApplicationContext.java:557] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'targeterBeanPostProcessor' defined in class path resource [com/alibaba/cloud/dubbo/autoconfigure/DubboOpenFeignAutoConfiguration.class]: Unsatisfied dependency expressed through method 'targeterBeanPostProcessor' parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.application.name' in value "${spring.application.name}"
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:55,960 INFO
+            [main][DubboGenericServiceFactory.java:159] - The Dubbo GenericService ReferenceBeans are destroying...
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:55,960 INFO
+            [main][AnnotationInjectedBeanPostProcessor.java:305] - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:55,968 INFO
+            [main][ConditionEvaluationReportLoggingListener.java:142] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:55,968 INFO
+            [main][AwaitingNonWebApplicationListener.java:155] -  [Dubbo] Current Spring Boot Application is about to shutdown...
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:55,973 ERROR
+            [main][SpringApplication.java:858] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'targeterBeanPostProcessor' defined in class path resource [com/alibaba/cloud/dubbo/autoconfigure/DubboOpenFeignAutoConfiguration.class]: Unsatisfied dependency expressed through method 'targeterBeanPostProcessor' parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.application.name' in value "${spring.application.name}"
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:721)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:534)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.shanjupay.merchant.MerchantApplicationBootstrap.main(MerchantApplicationBootstrap.java:18)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.application.name' in value "${spring.application.name}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 19 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.application.name' in value "${spring.application.name}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	... 31 more
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:55,976 INFO
+            [DubboShutdownHook][DubboShutdownHook.java:58] -  [DUBBO] Run shutdown hook now., dubbo version: 2.7.3, current host: 192.168.31.2
+[shanjupay-merchant-application][${env:SERVER_PORT}] 2021-04-28 16:41:55,977 INFO
+            [DubboShutdownHook][AbstractRegistryFactory.java:68] -  [DUBBO] Close all registries [], dubbo version: 2.7.3, current host: 192.168.31.2

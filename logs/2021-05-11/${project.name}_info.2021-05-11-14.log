@@ -1,0 +1,12 @@
+[${project.name}][${env:SERVER_PORT}] 2021-05-11 15:00:00,435 ERROR [dubbo-client-idleCheck-thread-1][ReconnectTimerTask.java:51] -  [DUBBO] Fail to connect to HeaderExchangeClient [channel=org.apache.dubbo.remoting.transport.netty4.NettyClient [192.168.31.2:0 -> /192.168.31.33:20890]], dubbo version: 2.7.3, current host: 192.168.31.2
+org.apache.dubbo.remoting.RemotingException: client(url: dubbo://192.168.31.33:20890/com.shanjupay.merchant.api.MerchantService?anyhost=true&application=merchant-application&bean.name=ServiceBean:com.shanjupay.merchant.api.MerchantService&check=false&codec=dubbo&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&heartbeat=60000&interface=com.shanjupay.merchant.api.MerchantService&lazy=false&methods=queryMerchantById,createMerchant&pid=3124&qos.enable=false&qos.port=22310&register=true&register.ip=192.168.31.2&release=2.7.3&remote.application=merchant-service&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1620698087428) failed to connect to server /192.168.31.33:20890 client-side timeout 3000ms (elapsed: 3004ms) from netty client 192.168.31.2 using dubbo version 2.7.3
+	at org.apache.dubbo.remoting.transport.netty4.NettyClient.doConnect(NettyClient.java:171)
+	at org.apache.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:190)
+	at org.apache.dubbo.remoting.transport.AbstractClient.reconnect(AbstractClient.java:246)
+	at org.apache.dubbo.remoting.exchange.support.header.HeaderExchangeClient.reconnect(HeaderExchangeClient.java:155)
+	at org.apache.dubbo.remoting.exchange.support.header.ReconnectTimerTask.doTask(ReconnectTimerTask.java:49)
+	at org.apache.dubbo.remoting.exchange.support.header.AbstractTimerTask.run(AbstractTimerTask.java:87)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:648)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:727)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$Worker.run(HashedWheelTimer.java:449)
+	at java.lang.Thread.run(Thread.java:748)
