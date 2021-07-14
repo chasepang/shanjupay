@@ -96,9 +96,9 @@ public class MerchantServiceImpl implements MerchantService {
         CreateTenantRequestDTO createTenantRequest = new CreateTenantRequestDTO();
         createTenantRequest.setMobile(merchantDTO.getMobile());
         //表示该租户类型是商户
-        createTenantRequest.setTenantTypeCode("shanju‐merchant");
+        createTenantRequest.setTenantTypeCode("shanju-merchant");
         //设置租户套餐为初始化套餐餐
-        createTenantRequest.setBundleCode("shanju‐merchant");
+        createTenantRequest.setBundleCode("shanju-merchant");
         //租户的账号信息
         createTenantRequest.setUsername(merchantDTO.getUsername());
         createTenantRequest.setPassword(merchantDTO.getPassword());
